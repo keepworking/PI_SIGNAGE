@@ -9,3 +9,10 @@ sudo chmod +x install.sh
 sudo ./install.sh
 ```
 
+install chromium-borwser 
+
+```
+sudo apt-get install chromium-borwser
+```
+
+setting the ....
