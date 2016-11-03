@@ -1,6 +1,4 @@
-# PI_SIGNAGE
-# 라즈베리파이를 이용한 사이니지 프로젝트
-raspberry pi project Signage
+# PI_SIGNAGE - 라즈베리파이를 이용한 사이니지 프로젝트
 
 ## 하드웨어를 포함한 기본준비 사항
 
@@ -19,6 +17,7 @@ raspberry pi project Signage
 
 
 우선 기본적으로 필요한 패키지들을 다운로드 하고, 설치해줍니다.
+
 초기 설치 내용은 쉘 스크립트로 작성이 되어있으니 wget을 통해서 다운로드 해줍니다.
 ```
 wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/install.sh
@@ -80,6 +79,6 @@ sudo /etc/init.d/nginx reload
 를 실행하고 라즈베리 파이를 재부팅 해줍니다.
 
 재부팅 이후에는 라즈베리 파이에서 웹브라우저를 통해 127.0.0.1 에 접속하거나
-또는 PC, 스마트폰 웹브라우저를 통해 라즈베리 파의 IP주소로 접속합니다.
+또는 PC, 스마트폰 웹브라우저를 통해 라즈베리 파이의 IP주소로 접속합니다.
 
 진행중...
