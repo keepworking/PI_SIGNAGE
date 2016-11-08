@@ -19,3 +19,15 @@ mv info.php /var/www/html/info.php
 
 echo ""
 echo "next install the chromium-borwser :)"
+echo "After five seconds to exit."
+echo "5"
+sleep 1
+echo "4"
+sleep 1
+echo "3"
+sleep 1
+echo "2"
+sleep 1
+echo "1"
+sleep 1
+reboot
