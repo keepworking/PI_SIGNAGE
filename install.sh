@@ -3,7 +3,7 @@ cd /home/pi/
 
 echo "start install"
 
-LIST="lxde lightdm xinit nginx php5-fpm php-apc unclutter gnome-schedule"
+LIST="lxde lightdm xinit x11-xserver-utils nginx php5-fpm php-apc unclutter gnome-schedule"
 apt-get install $LIST -y
 
 echo "finish install package"
