@@ -20,14 +20,14 @@ wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/www/info.ph
 mv info.php /var/www/html/info.php
 #php info 파일 다운로드
 
-<<<<<<< HEAD
+
 wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/run.sh
 chmod +x run.sh
-=======
+
 wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/default
 mv default /etc/nginx/sites-available/default
 #nginx setting file download
->>>>>>> origin/master
+
 
 echo ""
 echo "next install the chromium-borwser :)"
