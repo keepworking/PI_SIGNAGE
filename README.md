@@ -36,6 +36,7 @@ sudo ./install.sh
 sudo apt-get install chromium-borwser
 ```
 
+<<<<<<< HEAD
 nginx의 설정파일을 수정합니다.
 
 ```
@@ -96,6 +97,9 @@ export VISUAL=nano; crontab -e
 @reboot /home/pi/run.sh &
 ```
 
+=======
+설치 완료후, 재부팅을 해줍니다.
+>>>>>>> origin/master
 
 재부팅 이후에는 라즈베리 파이에서 웹브라우저를 통해 127.0.0.1 에 접속하거나
 또는 PC, 스마트폰 웹브라우저를 통해 라즈베리 파이의 IP주소로 접속합니다.
