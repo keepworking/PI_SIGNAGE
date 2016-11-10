@@ -1,5 +1,7 @@
+#run setup
 sleep 10
 unclutter -idle 0 &
+
 export DISPLAY=:0
 xset s off
 xset -dpms
