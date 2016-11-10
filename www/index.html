@@ -27,7 +27,7 @@ function checkTime(i) {
 .bl-main > section {
     position: absolute;
     width: 50%;
-    height: 50%;
+    height: 100%;
     text-align: middle;
 }
 
@@ -41,28 +41,26 @@ p {
     transform: translate(-50%, -50%);
 }
 
+section > img {
+  margin: 0;
+  max-height: 50vh;
+  max-width: 50vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .bl-main > section:first-child {
     top: 0;
     left: 0;
-    background: #EF5350;
+    background: #F44336;
 }
 
 .bl-main > section:nth-child(2) {
     top: 0;
     left: 50%;
-    background: #EC407A;
-}
-
-.bl-main > section:nth-child(3) {
-    top: 50%;
-    left: 0;
-    background: #AB47BC;
-}
-
-.bl-main > section:nth-child(4) {
-    top: 50%;
-    left: 50%;
-    background: #7E57C2;
+    background: #009688;
 }
 
 body, html {
@@ -83,21 +81,17 @@ body, html {
 }
 
 </style>
-</head><body>
+</head>
+<body>
 <div class="container">
 <div id="bl-main" class="bl-main">
 <section>
-<p id="time">A</p>
+<img src = "img/rpi_logo.png">
 </section>
 <section>
-<p>B</p>
+<p id="time">B</p>
 </section>
 <section>
-<p>C</p>
-</section>
-<section>
-<p>D</p>
-</section>
 </div>
 </div>
 
