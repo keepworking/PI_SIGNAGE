@@ -36,53 +36,6 @@ sudo ./install.sh
 sudo apt-get install chromium-borwser
 ```
 
-nginx의 설정파일을 수정합니다.
-
-```
-sudo nano /etc/nginx/sites-available/default
-```
-nano나, vi등 익숙한 에디터로 파일을 수정해줍니다.
-
-소스코드 내부의 아래에해당된 부분을 맞게 수정해줍니다.
-
-```
-
-        # Add index.php to the list if you are using PHP
-        index index.php index.html index.htm index.nginx-debian.html;
-
-        server_name _;
-
-        location / {
-                # First attempt to serve request as file, then
-                # as directory, then fall back to displaying a 404.
-                try_files $uri $uri/ =404;
-        }
-
-        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-        #
-        location ~ \.php$ {
-                include snippets/fastcgi-php.conf;
-
-                # With php5-cgi alone:
-                #fastcgi_pass 127.0.0.1:9000;
-                # With php5-fpm:
-                fastcgi_pass unix:/var/run/php5-fpm.sock;
-        }
-
-        # deny access to .htaccess files, if Apache's document root
-        # concurs with nginx's one
-        #
-        location ~ /\.ht {
-                deny all;
-        }
-
-```
-수정이 다되었다면,
-다음 명령을 실행합니다.
-
-```
-sudo /etc/init.d/nginx reload
-```
 다음으로 사이니지가 매번 부팅 될때마다 실행 될수 있도록 설정을 해야합니다.
 
 다음의 명령을 실행해줍니다.
