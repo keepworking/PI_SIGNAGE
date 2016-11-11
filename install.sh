@@ -12,14 +12,19 @@ apt-get remove xscreensaver -y
 #나는... 스크린 세이버가 싫다.. 정말.. 싫..다..
 
 
-wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/www/index.html
-mv index.html /var/www/html/index.html
+#wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/www/index.html
+#mv index.html /var/www/html/index.html
 #인덱스 파일 다운로드
 
-wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/www/info.php
-mv info.php /var/www/html/info.php
+#wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/www/info.php
+#mv info.php /var/www/html/info.php
 #php info 파일 다운로드
 
+wget https://github.com/keepworking/RPS_BOARD/archive/master.zip
+unzip master.zip
+rm master.zip
+cp -R -f RPS_BOARD-master/* /var/www/html/
+rm -r RPS_BOARD-master/
 
 wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/run.sh
 chmod +x run.sh
