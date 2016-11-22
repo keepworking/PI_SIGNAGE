@@ -6,4 +6,4 @@ export DISPLAY=:0
 xset s off
 xset -dpms
 xset s 0 0
-DISPLAY=:0 chromium-browser -kiosk 127.0.0.1/index.html &
+DISPLAY=:0 chromium-browser -noerrdialogs -kiosk 127.0.0.1/index.html &
