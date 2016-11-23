@@ -20,11 +20,16 @@ apt-get remove xscreensaver -y
 #mv info.php /var/www/html/info.php
 #php info 파일 다운로드
 
-wget https://github.com/keepworking/RPS_BOARD/archive/master.zip
-unzip master.zip
-rm master.zip
-cp -R -f RPS_BOARD-master/* /var/www/html/
-rm -r RPS_BOARD-master/
+#wget https://github.com/keepworking/RPS_BOARD/archive/master.zip
+#unzip master.zip
+#rm master.zip
+#cp -R -f RPS_BOARD-master/* /var/www/html/
+#rm -r RPS_BOARD-master/
+
+wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/update.sh
+chmod +x update.sh
+
+./update.sh
 
 wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/run.sh
 chmod +x run.sh
