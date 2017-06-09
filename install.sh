@@ -38,6 +38,7 @@ wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/default
 mv default /etc/nginx/sites-available/default
 #nginx setting file download
 
+chmod -R 777 /var/www/html/
 
 echo ""
 echo "next install the chromium-borwser :)"
