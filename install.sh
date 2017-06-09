@@ -40,6 +40,8 @@ mv default /etc/nginx/sites-available/default
 
 chmod -R 777 /var/www/html/
 
+ibus engine hangul
+
 echo ""
 echo "next install the chromium-borwser :)"
 echo "After five seconds to exit."
