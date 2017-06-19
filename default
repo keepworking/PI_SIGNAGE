@@ -38,6 +38,18 @@ server {
 		# First attempt to serve request as file, then
 		# as directory, then fall back to displaying a 404.
 		try_files $uri $uri/ =404;
+		# Simple requests
+		if ($request_method ~* "(GET|POST)") {
+			add_header "Access-Control-Allow-Origin"  *;
+		}
+
+		# Preflighted requests
+		if ($request_method = OPTIONS ) {
+			add_header "Access-Control-Allow-Origin"  *;
+			add_header "Access-Control-Allow-Methods" "GET, POST, OPTIONS, HEAD";
+			add_header "Access-Control-Allow-Headers" "Authorization, Origin, X-Requested-With, Content-Type, Accept";
+			return 200;
+		}
 	}
 
 	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
