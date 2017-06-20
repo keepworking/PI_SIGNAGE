@@ -9,22 +9,7 @@ apt-get install $LIST -y
 echo "finish install package"
 
 apt-get remove xscreensaver -y
-#나는... 스크린 세이버가 싫다.. 정말.. 싫..다..
-
-
-#wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/www/index.html
-#mv index.html /var/www/html/index.html
-#인덱스 파일 다운로드
-
-#wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/www/info.php
-#mv info.php /var/www/html/info.php
-#php info 파일 다운로드
-
-#wget https://github.com/keepworking/RPS_BOARD/archive/master.zip
-#unzip master.zip
-#rm master.zip
-#cp -R -f RPS_BOARD-master/* /var/www/html/
-#rm -r RPS_BOARD-master/
+#스크린 세이버 삭제
 
 wget https://raw.githubusercontent.com/keepworking/PI_SIGNAGE/master/update.sh
 chmod +x update.sh
@@ -42,7 +27,7 @@ chmod -R 777 /var/www/html/
 
 ibus engine hangul
 
-#auto crontab
+#auto append crontab
 crontab -u pi -l > mycron
 echo "@reboot /home/pi/run.sh &" >> mycron
 echo "* * * * * wget -O /var/www/html/weather.txt http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2729057600" >> mycron
