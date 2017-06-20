@@ -42,10 +42,11 @@ chmod -R 777 /var/www/html/
 
 ibus engine hangul
 
-crontab -l > mycron
+#auto crontab
+crontab -u pi -l > mycron
 echo "@reboot /home/pi/run.sh &" >> mycron
-echo "0 * * * * wget -O /var/www/html/weather.txt http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2729057600" >> mycron 
-crontab mycron
+echo "0 * * * * wget -O /var/www/html/weather.txt http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2729057600" >> mycron
+crontab -u pi mycron
 rm mycron
 
 
